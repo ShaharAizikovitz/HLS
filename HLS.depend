@@ -1,0 +1,82 @@
+# depslib dependency file v1.0
+1539703614 source:c:\users\shahar\documents\hls\16.10.2018\hls\main.c
+	<stdio.h>
+	<stdlib.h>
+	"utilities.h"
+	"memory.h"
+	"dram.h"
+	"qram.h"
+	"file.h"
+	"mux.h"
+	"module.h"
+	"scan.h"
+	"log.h"
+
+1539723605 c:\users\shahar\documents\hls\16.10.2018\hls\utilities.h
+	<stdbool.h>
+	<string.h>
+	"log.h"
+	"definitions.h"
+
+1539704580 c:\users\shahar\documents\hls\16.10.2018\hls\log.h
+	<time.h>
+	<stdarg.h>
+
+1539722252 c:\users\shahar\documents\hls\16.10.2018\hls\definitions.h
+
+1539723449 c:\users\shahar\documents\hls\16.10.2018\hls\dram.h
+	"definitions.h"
+	"utilities.h"
+	"object.h"
+	"file.h"
+
+1539713847 c:\users\shahar\documents\hls\16.10.2018\hls\object.h
+	"definitions.h"
+	"log.h"
+	"lnklst.h"
+	"utilities.h"
+
+1539714347 c:\users\shahar\documents\hls\16.10.2018\hls\lnklst.h
+	<stdio.h>
+	"objects.h"
+
+1539721644 c:\users\shahar\documents\hls\16.10.2018\hls\objects.h
+	"definitions.h"
+
+1539722372 c:\users\shahar\documents\hls\16.10.2018\hls\qram.h
+	"dram.h"
+	"utilities.h"
+
+1539703938 c:\users\shahar\documents\hls\16.10.2018\hls\file.h
+	<string.h>
+	<stdint.h>
+	<stdio.h>
+	<stdarg.h>
+	<stdlib.h>
+	"definitions.h"
+
+1539704119 c:\users\shahar\documents\hls\16.10.2018\hls\mux.h
+	"file.h"
+	"definitions.h"
+
+1539723537 c:\users\shahar\documents\hls\16.10.2018\hls\module.h
+	"object.h"
+	"array.h"
+	"definitions.h"
+	"graph.h"
+	"utilities.h"
+
+1539723618 c:\users\shahar\documents\hls\16.10.2018\hls\scan.h
+	"definitions.h"
+	"utilities.h"
+	"graph.h"
+	<stdlib.h>
+
+1539705954 c:\users\shahar\documents\hls\16.10.2018\hls\graph.h
+	"object.h"
+	"lnklst.h"
+	"definitions.h"
+
+1539722544 c:\users\shahar\documents\hls\16.10.2018\hls\array.h
+	"objects.h"
+

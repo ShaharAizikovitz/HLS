@@ -1,0 +1,558 @@
+open log file..: Wed Oct 17 05:16:26 2018
+
+* at Wed Oct 17 05:16:26 2018
+: node list initialized.. in function: Object.initObject
+* at Wed Oct 17 05:16:26 2018
+: node list initialized.. in function: Object.initObject
+
+print node list
+
+number of node: 0
+cluster: entry
+name: Load
+inputs
+1->|
+outputs
+2->|
+
+
+
+number of node: 1
+cluster: entry
+name: Argument
+inputs
+-1->|
+outputs
+0->41->|
+
+
+
+number of node: 2
+cluster: entry
+name: SUBTRACT
+inputs
+3->0->|
+outputs
+4->26->|
+
+
+
+number of node: 3
+cluster: entry
+name: Argument
+inputs
+-1->|
+outputs
+2->6->30->47->48->52->54->|
+
+
+
+number of node: 4
+cluster: entry
+name: Store
+inputs
+2->5->|
+outputs
+-1->|
+
+
+
+number of node: 5
+cluster: entry
+name: Constant
+inputs
+-1->|
+outputs
+4->39->|
+
+
+
+number of node: 6
+cluster: entry
+name: LESS-THAN
+inputs
+7->3->|
+outputs
+8->52->54->|
+
+
+
+number of node: 7
+cluster: entry
+name: Constant
+inputs
+-1->|
+outputs
+6->14->46->|
+
+
+
+number of node: 8
+cluster: entry
+name: condBR
+inputs
+6->|
+outputs
+-1->|
+
+
+
+number of node: 9
+cluster: land_lhs_true_lr_ph
+name: BR
+inputs
+-1->|
+outputs
+-1->|
+
+
+
+number of node: 10
+cluster: land_lhs_true
+name: Clocked_Register
+inputs
+46->|
+outputs
+26->|
+
+
+
+number of node: 11
+cluster: land_lhs_true
+name: Clocked_Register
+inputs
+47->|
+outputs
+25->20->|
+
+
+
+number of node: 12
+cluster: land_lhs_true
+name: Clocked_Register
+inputs
+48->|
+outputs
+24->21->|
+
+
+
+number of node: 13
+cluster: land_lhs_true
+name: Clocked_Register
+inputs
+49->|
+outputs
+14->27->|
+
+
+
+number of node: 14
+cluster: land_lhs_true
+name: GEP
+inputs
+15->7->13->|
+outputs
+16->23->|
+
+
+
+number of node: 15
+cluster: land_lhs_true
+name: Constant
+inputs
+-1->|
+outputs
+14->|
+
+
+
+number of node: 16
+cluster: land_lhs_true
+name: Load
+inputs
+14->|
+outputs
+17->|
+
+
+
+number of node: 17
+cluster: land_lhs_true
+name: LESS-THAN
+inputs
+16->18->|
+outputs
+19->51->53->|
+
+
+
+number of node: 18
+cluster: land_lhs_true
+name: Constant
+inputs
+-1->|
+outputs
+17->|
+
+
+
+number of node: 19
+cluster: land_lhs_true
+name: condBR
+inputs
+17->|
+outputs
+-1->|
+
+
+
+number of node: 20
+cluster: for_endsplit
+name: ASSIGNMENT
+inputs
+11->|
+outputs
+51->|
+
+
+
+number of node: 21
+cluster: for_endsplit
+name: ASSIGNMENT
+inputs
+12->|
+outputs
+53->|
+
+
+
+number of node: 22
+cluster: for_endsplit
+name: BR
+inputs
+-1->|
+outputs
+-1->|
+
+
+
+number of node: 23
+cluster: for_body
+name: Load
+inputs
+14->|
+outputs
+24->|
+
+
+
+number of node: 24
+cluster: for_body
+name: MULTIPLY
+inputs
+12->23->|
+outputs
+25->|
+
+
+
+number of node: 25
+cluster: for_body
+name: ADD
+inputs
+24->11->|
+outputs
+48->33->|
+
+
+
+number of node: 26
+cluster: for_body
+name: SUBTRACT
+inputs
+2->10->|
+outputs
+47->32->|
+
+
+
+number of node: 27
+cluster: for_body
+name: ADD
+inputs
+13->28->|
+outputs
+29->49->|
+
+
+
+number of node: 28
+cluster: for_body
+name: Constant
+inputs
+-1->|
+outputs
+27->|
+
+
+
+number of node: 29
+cluster: for_body
+name: TRUNC
+inputs
+27->|
+outputs
+30->46->|
+
+
+
+number of node: 30
+cluster: for_body
+name: LESS-THAN
+inputs
+29->3->|
+outputs
+31->|
+
+
+
+number of node: 31
+cluster: for_body
+name: condBR
+inputs
+30->|
+outputs
+-1->|
+
+
+
+number of node: 32
+cluster: for_cond_for_end_crit_edge
+name: ASSIGNMENT
+inputs
+26->|
+outputs
+51->|
+
+
+
+number of node: 33
+cluster: for_cond_for_end_crit_edge
+name: ASSIGNMENT
+inputs
+25->|
+outputs
+53->|
+
+
+
+number of node: 34
+cluster: for_cond_for_end_crit_edge
+name: BR
+inputs
+-1->|
+outputs
+-1->|
+
+
+
+number of node: 35
+cluster: for_end
+name: ASSIGNMENT
+inputs
+52->|
+outputs
+37->|
+
+
+
+number of node: 36
+cluster: for_end
+name: ASSIGNMENT
+inputs
+54->|
+outputs
+40->|
+
+
+
+number of node: 37
+cluster: for_end
+name: ADD
+inputs
+35->38->|
+outputs
+39->40->|
+
+
+
+number of node: 38
+cluster: for_end
+name: Constant
+inputs
+-1->|
+outputs
+37->|
+
+
+
+number of node: 39
+cluster: for_end
+name: Store
+inputs
+37->5->|
+outputs
+-1->|
+
+
+
+number of node: 40
+cluster: for_end
+name: ADD
+inputs
+36->37->|
+outputs
+41->|
+
+
+
+number of node: 41
+cluster: for_end
+name: Store
+inputs
+40->1->|
+outputs
+-1->|
+
+
+
+number of node: 42
+cluster: for_end
+name: RT
+inputs
+-1->|
+outputs
+-1->|
+
+
+
+number of node: 43
+cluster: MUX_BB
+name: ICMPEQ
+inputs
+44->45->|
+outputs
+46->47->48->49->|
+
+
+
+number of node: 44
+cluster: MUX_BB
+name: CONTROL_REGISTER
+inputs
+-1->|
+outputs
+43->|
+
+
+
+number of node: 45
+cluster: MUX_BB
+name: Constant
+inputs
+-1->|
+outputs
+43->|
+
+
+
+number of node: 46
+cluster: MUX_BB
+name: SELECT|<0x35ac130>Ctrl_cmp0
+inputs
+43->7->29->|
+outputs
+10->|
+
+
+
+number of node: 47
+cluster: MUX_BB
+name: SELECT|<0x35ac130>Ctrl_cmp0
+inputs
+43->3->26->|
+outputs
+11->|
+
+
+
+number of node: 48
+cluster: MUX_BB
+name: SELECT|<0x35ac130>Ctrl_cmp0
+inputs
+43->3->25->|
+outputs
+12->|
+
+
+
+number of node: 49
+cluster: MUX_BB
+name: SELECT|<0x35ac130>Ctrl_cmp0
+inputs
+43->50->27->|
+outputs
+13->|
+
+
+
+number of node: 50
+cluster: MUX_BB
+name: Constant
+inputs
+-1->|
+outputs
+49->|
+
+
+
+number of node: 51
+cluster: MUX_BB
+name: SELECT|<0x35547b0>cmp1
+inputs
+17->32->20->|
+outputs
+52->|
+
+
+
+number of node: 52
+cluster: MUX_BB
+name: SELECT|<0x359bb90>cmp2
+inputs
+6->51->3->|
+outputs
+35->|
+
+
+
+number of node: 53
+cluster: MUX_BB
+name: SELECT|<0x35547b0>cmp1
+inputs
+17->33->21->|
+outputs
+54->|
+
+
+
+number of node: 54
+cluster: MUX_BB
+name: SELECT|<0x359bb90>cmp2
+inputs
+6->53->3->|
+outputs
+36->|
+
+
