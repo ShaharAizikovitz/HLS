@@ -1,0 +1,179 @@
+digraph G {
+compound=true; nodesep=1.0;
+edge [penwidth="3"] ;
+subgraph cluster_entry {
+label = "entry";
+style=filled;
+color=grey69;
+0[shape=Mrecord , style="filled", fillcolor= deepskyblue label="{{{ {<0x2b890f0>0|<0x2b8ab40>k}| { LESS-THAN }}} | cmp1}"];
+}
+1[shape=Mrecord , style="filled", fillcolor= gold label="{{{  { Constant }}} | i32 0}"];
+2[shape=Mrecord , style="filled", fillcolor= coral label="{{{  { Argument }}} | k}"];
+subgraph cluster_entry {
+label = "entry";
+style=filled;
+color=grey69;
+3[shape=Mrecord , style="filled", fillcolor= purple label="{{{ {<0x2bda330>cmp1}| { condBR }}} | {for.end|for.body.lr.ph}}"];
+}
+subgraph cluster_for_body_lr_ph {
+label = "for_body_lr_ph";
+style=filled;
+color=grey90;
+4[shape=Mrecord , style="filled", fillcolor= purple label="{{{  { BR }}} | for.body}"];
+}
+subgraph cluster_for_body {
+label = "for_body";
+style=filled;
+color=grey90;
+5[shape=Mrecord , style="filled", fillcolor= firebrick1 label="{{{ mux| { Clocked Register }}} | y.03}"];
+}
+subgraph cluster_for_body {
+label = "for_body";
+style=filled;
+color=grey90;
+6[shape=Mrecord , style="filled", fillcolor= firebrick1 label="{{{ mux| { Clocked Register }}} | indvars.iv2}"];
+}
+subgraph cluster_for_body {
+label = "for_body";
+style=filled;
+color=grey90;
+7[shape=Mrecord , style="filled", fillcolor= darkolivegreen3 label="{{{ {<0x2b89e98>A|<0x2b890f0>0|<0x2b8dd20>indvars.iv2}| { GEP }}} | arrayidx}"];
+}
+8[shape=Mrecord , style="filled", fillcolor= gold label="{{{  { Constant }}} | A}"];
+subgraph cluster_for_body {
+label = "for_body";
+style=filled;
+color=grey90;
+9[shape=Mrecord , style="filled", fillcolor= darkolivegreen3 label="{{{ {<0x2b8e1a8>arrayidx}| { Load }}} |   %0 = load i32* %arrayidx, align 4}"];
+}
+subgraph cluster_for_body {
+label = "for_body";
+style=filled;
+color=grey90;
+10[shape=Mrecord , style="filled", fillcolor= darkolivegreen3 label="{{{ {<0x2bd4610>y.03|<0x2b8da88>NONAME}| { MULTIPLY }}} | mul}"];
+}
+subgraph cluster_for_body {
+label = "for_body";
+style=filled;
+color=grey90;
+11[shape=Mrecord , style="filled", fillcolor= darkolivegreen3 label="{{{ {<0x2b8dd20>indvars.iv2|<0x2bcd140>1}| { ADD }}} | indvars.iv.next}"];
+}
+12[shape=Mrecord , style="filled", fillcolor= gold label="{{{  { Constant }}} | i64 1}"];
+subgraph cluster_for_body {
+label = "for_body";
+style=filled;
+color=grey90;
+13[shape=Mrecord , style="filled", fillcolor= darkolivegreen3 label="{{{ {<0x2bcd3b0>indvars.iv.next}| { TRUNC }}} |   %1 = trunc i64 %indvars.iv.next to i32}"];
+}
+subgraph cluster_for_body {
+label = "for_body";
+style=filled;
+color=grey90;
+14[shape=Mrecord , style="filled", fillcolor= deepskyblue label="{{{ {<0x2b89228>NONAME|<0x2b8ab40>k}| { LESS-THAN }}} | cmp}"];
+}
+subgraph cluster_for_body {
+label = "for_body";
+style=filled;
+color=grey90;
+15[shape=Mrecord , style="filled", fillcolor= purple label="{{{ {<0x2b8ded0>cmp}| { condBR }}} |{for.cond.for.end_crit_edge|for.body}}"];
+}
+subgraph cluster_for_cond_for_end_crit_edge {
+label = "for_cond_for_end_crit_edge";
+style=filled;
+color=grey90;
+16[shape=Mrecord , style="filled", fillcolor= firebrick1 label="{{{ {<0x2b8db20>mul}| { ASSIGNMENT }}} | split}"];
+}
+subgraph cluster_for_cond_for_end_crit_edge {
+label = "for_cond_for_end_crit_edge";
+style=filled;
+color=grey90;
+17[shape=Mrecord , style="filled", fillcolor= purple label="{{{  { BR }}} | for.end}"];
+}
+subgraph cluster_for_end {
+label = "for_end";
+style=filled;
+color=grey90;
+18[shape=Mrecord , style="filled", fillcolor= firebrick1 label="{{{ mux| { ASSIGNMENT }}} | y.0.lcssa}"];
+}
+subgraph cluster_for_end {
+label = "for_end";
+style=filled;
+color=grey90;
+19[shape=Mrecord , style="filled", fillcolor= purple label="{{{ {<0x2b8dda0>y.0.lcssa}| { RT }}} |   ret i32 %y.0.lcssa}"];
+}
+subgraph cluster_MUX_BB {
+label = "MUX_BB";
+node [style=filled,fillcolor=forestgreen];
+style=filled;
+color=burlywood1;
+20[shape=Mrecord , style="filled", fillcolor= deepskyblue label="{{{ {<0x2beb720>PredBB|<0x2bdfd80>45958896}| { ICMPEQ }}} | Ctrl_cmp0}"];
+}
+subgraph cluster_MUX_BB {
+label = "MUX_BB";
+node [style=filled,fillcolor=forestgreen];
+style=filled;
+color=burlywood1;
+21[shape=Mrecord , style="filled", fillcolor= firebrick1 label="{{{  { CONTROL REGISTER }}} | PredBB}"];
+}
+22[shape=Mrecord , style="filled", fillcolor= gold label="{{{  { Constant }}} | i64 45958896}"];
+subgraph cluster_MUX_BB {
+label = "MUX_BB";
+node [style=filled,fillcolor=forestgreen];
+style=filled;
+color=burlywood1;9->10
+23[shape=Mrecord , style="filled", fillcolor= forestgreen label="{{{ {<0x2b8ab40>k|<0x2b8db20>mul}| { SELECT|<0x2be3460>Ctrl_cmp0 }}} | cMUX_y.03}"];
+}
+subgraph cluster_MUX_BB {
+label = "MUX_BB";
+node [style=filled,fillcolor=forestgreen];
+style=filled;
+color=burlywood1;
+24[shape=Mrecord , style="filled", fillcolor= forestgreen label="{{{ {<0x2bcd190>0|<0x2bcd3b0>indvars.iv.next}| { SELECT|<0x2be3460>Ctrl_cmp0 }}} | cMUX_indvars.iv2}"];
+}
+25[shape=Mrecord , style="filled", fillcolor= gold label="{{{  { Constant }}} | i64 0}"];
+subgraph cluster_MUX_BB {
+label = "MUX_BB";_m->_edges->_list[_index]->target
+node [style=filled,fillcolor=forestgreen];
+style=filled;
+color=burlywood1;
+26[shape=Mrecord , style="filled", fillcolor= forestgreen label="{{{ {<0x2be0b80>split|<0x2b8ab40>k}| { SELECT|<0x2bda330>cmp1 }}} | MUX_y.0.lcssa}"];
+}
+1->0  [  headport="0x2b890f0:n", tailport="s"];
+2->0  [  headport="0x2b8ab40:n", tailport="s"];
+0->3  [  headport="0x2bda330:n", tailport="s"];
+8->7  [  headport="0x2b89e98:n", tailport="s"];
+1->7  [  headport="0x2b890f0:n", tailport="s"];
+6->7  [  headport="0x2b8dd20:n", tailport="s"];
+7->9  [  headport="0x2b8e1a8:n", tailport="s"];
+5->10  [  headport="0x2bd4610:n", tailport="s"];
+9->10  [  headport="0x2b8da88:n", tailport="s"];
+6->11  [  headport="0x2b8dd20:n", tailport="s"];
+12->11  [  headport="0x2bcd140:n", tailport="s"];
+11->13  [  headport="0x2bcd3b0:n", tailport="s"];
+13->14  [  headport="0x2b89228:n", tailport="s"];
+2->14  [  headport="0x2b8ab40:n", tailport="s"];
+14->15  [  headport="0x2b8ded0:n", tailport="s"];
+18->19  [  headport="0x2b8dda0:n", tailport="s"];
+21->20  [  headport="0x2beb720:n", tailport="s"];
+22->20  [  headport="0x2bdfd80:n", tailport="s"];
+20->23  [  headport="0x2be3460:e", tailport="s"];
+2->23  [  headport="0x2b8ab40:n", tailport="s"];
+10->23  [  headport="0x2b8db20:n", tailport="s"];
+23->5  [  headport="n", tailport="s"];
+20->24  [  headport="0x2be3460:e", tailport="s"];
+25->24  [  headport="0x2bcd190:n", tailport="s"];
+11->24  [  headport="0x2bcd3b0:n", tailport="s"];
+24->6  [  headport="n", tailport="s"];
+10->16  [  headport="0x2b8db20:n", tailport="s"];
+0->26  [  headport="0x2bda330:e", tailport="s"];
+16->26  [  headport="0x2be0b80:n", tailport="s"];
+2->26  [  headport="0x2b8ab40:n", tailport="s"];
+26->18  [  headport="n", tailport="s"];
+3->4  [  label="Ctrl: T" , ltail="cluster_entry", lhead="cluster_for_body_lr_ph", style="dotted", color="red",  headport="n", tailport="s"];
+3->18  [  label="Ctrl: F" , ltail="cluster_entry", lhead="cluster_for_end", style="dotted", color="red",  headport="n", tailport="s"];
+4->5  [  label="Ctrl Edge" , ltail="cluster_for_body_lr_ph", lhead="cluster_for_body", style="dotted", color="red",  headport="n", tailport="s"];
+15->5  [  label="Ctrl: T" , ltail="cluster_for_body", lhead="cluster_for_body", style="dotted", color="red",  headport="n", tailport="s"];
+15->16  [  label="Ctrl: F" , ltail="cluster_for_body", lhead="cluster_for_cond_for_end_crit_edge", style="dotted", color="red",  headport="n", tailport="s"];
+17->18  [  label="Ctrl Edge" , ltail="cluster_for_cond_for_end_crit_edge", lhead="cluster_for_end", style="dotted", color="red",  headport="n", tailport="s"];
+}
+
