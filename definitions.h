@@ -50,7 +50,6 @@
 #define INT_2 "`int_2"
 #define INT_10 "`int_10"
 #define INT_32 "`int_32"
-#define INT_64 "`int_64"
 #define WIRE_SIZE wire_size
 #define MAX_OPERAND_SIZE 256
 #define MAX_NUM_LOADS 4
